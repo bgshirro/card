@@ -4,54 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link Card</title>
+    <title>Card: Shirro</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="theme-color" content="#fff">
+    <link rel="icon"
+        type="image" 
+        sizes="32x32" 
+        href="images/Avatar.png">
 </head>
 <body>
-    <div class="page">
-        <div class="sec1">
-            <img src="Back.jpg" alt="">
-            <div class="content">
+    <main class="main">
+        <!--Cover-->
+        <header>
+            <img class="header-img"
+            src="images/Drawer.jpg"
+            alt="article-img">
+        </header>
+        <!--Article-->
+        <article>
+            <section>
+                <h2 class="text">About Me?</h2>
                 <hr>
-                <p>Front-End</p>
-                <p>UI/UX</p>
-                <p>Drawing</p>
-            </div>
+                <h1>A beginner</h1>
+                <p>who is pasionate about:<br>
+                Front-End Dev<br>
+                UI/UX Design<br>
+                Drawing & Illustration</p>
+            </section>
+            <footer>
+                <div class="profile">
+                    <img src="images/Avatar.png"
+                    alt="Profile Avatar">
+                </div>
+                <div class="name">
+                    <p style="font-size: 18px;">bgshirro</p>
+                    <p style="font-size: 18px;">Bagas Dwi Anggoro</p>
+                </div>
+            </footer>
+        </article>
+    </main>
+    <!---Card link content-->
+    <div class="content">
+        <p>Connect With Me</p>
+        <div class="card">
+            <a href="#">
+                <img src="images/deviantart.svg" alt="">
+                <p class="Title">DevianArt</p>
+            </a>
         </div>
-        <div class="sec2">
-            <p>Connect</p>
-            <p>With</p>
-            <p>Me</p>
-            <div class="link">
-                <div class="menu">
-                    <a href="https://www.github.com/bgshirro">
-                        <img src="github.svg" alt="">
-                    </a>
-                </div>
-                <div class="menu">
-                    <a href="https://www.dribbble.com/Shirr0">
-                        <img src="dribbble.svg" alt="">
-                    </a>
-                </div>
-                <div class="menu">
-                    <a href="https://www.pin.it/J5EuY1f">
-                        <img src="pinterest.svg" alt="">
-                    </a>
-                </div>
-                <div class="menu">
-                    <a href="https://www.deviantart/bgshirro">
-                        <img src="deviantart.svg" alt="">
-                    </a>
-                </div>
-                <div class="menu">
-                    <a href="https://www.pixiv.net/user/63285760">
-                        <img src="pixiv.svg" alt="">
-                    </a>
-                </div>
-                
-            </div>
+        <div class="card">
+            <a href="#">
+                <img src="images/dribbble.svg" alt="">
+                <p class="Title">Dribbble</p>
+            </a>
         </div>
+        <div class="card">
+            <a href="#">
+                <img src="images/github.svg" alt="">
+                <p class="Title">GitHub</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="images/pinterest.svg" alt="">
+                <p class="Title">Pinterest</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="images/pixiv.svg" alt="">
+                <p class="Title">Pixiv</p>
+            </a>
+        </div>
+    </div>
+    
+    <div class="sidebar" id="mysidebar">
+        <button class="button">
+            &times;
+        </button>
+        <header>
+            <p>Connect<br>
+                With<br>
+                Me
+            </p>
+            <hr>
+        </header>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="images/deviantart.svg" alt="">
+                    <p>DevianArt</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/deviantart.svg" alt="">
+                    <p>DevianArt</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/deviantart.svg" alt="">
+                    <p>DevianArt</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/deviantart.svg" alt="">
+                    <p>DevianArt</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/deviantart.svg" alt="">
+                    <p>DevianArt</p>
+                </a>
+            </li>
+        </ul>
+        <script>
+            function button() {
+              document.getElementById("mysidebar").style.display = "block";
+            }
+            
+            function button() {
+              document.getElementById("mysidebar").style.display = "none";
+            }
+            </script>
     </div>
 </body>
 </html>
