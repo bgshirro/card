@@ -95,6 +95,11 @@ footer{
 .name{
     flex-direction: row;
 }
+.name p{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
 .content{
     width: 1075.6px;
 }
@@ -145,33 +150,34 @@ footer{
 .sidebar{
     display: none;
 }
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 440px) {
     html{
         height: 100vh;
     }
     main{
         flex-direction: row;
         width: 400px;
-        padding-top: 50px;
+        margin-top: -20px;
+        overflow: hidden;
     }
     .main{
-        padding: 5px 15px;
+        padding: 5px 12.5px;
         background-color: #1D232F;
-        height: 533.3px;
-        width: 400px;
+        height: 480px;
+        width: 360px;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
     header{
-        height: 220.7px;
-        width: 372.4px;
+        height: 198.6px;
+        width: 335.2px;
         left: 0px;
     }
     .header-img{
-        height: 220.7px;
-        width: 372.4px;
+        height: 198.6px;
+        width: 335.2px;
         border-radius: 15px;
     }
     article{
@@ -180,18 +186,30 @@ footer{
         padding: 0px 12px;
     }
     section h2{
-        font-size: 44px;
+        font-size: 38px;
     }
     hr{
-        width: 350px;
+        width: 310px;
         margin: 5px 0 15px 0;
     }
     section h1, section p{
-        font-size: 22px;
+        font-size: 18px;
         line-height: 1.1;
+        font-weight: 400;
     }
     .card img{
         width: 56.3px;
+    }
+    .profile img{
+        width: 50.7px;
+    }
+    .name{
+        margin-top: 5px;
+    }
+    .name p{
+        font-size: 14px;
+        font-weight: 400;
+        color: white;
     }
     .content{
         display: none;
@@ -213,6 +231,10 @@ footer{
         border-radius: 50px;
         border: none;
         
+    }
+    button p{
+        font-size: 30px;
+        color: #393D46;
     }
     header{
         height: 200px;
